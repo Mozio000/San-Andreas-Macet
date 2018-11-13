@@ -2,7 +2,9 @@
   margin: 0;
   padding: 0;
 }
-
+body {
+  font-size: 16px;
+}
 @font-face {
   font-family: "Roboto Medium";
   src: url("../Fonts/3964.ttf");
@@ -28,8 +30,8 @@ li {
 }
 
 header {
-  margin: 17px auto 8px;
-  padding: 0 32px 15px;
+  margin: 1.1rem auto 1.5rem;
+  padding: 0 2rem 0.91rem;
   display: flex;
   justify-content: space-between;
   width: 90%;
@@ -37,13 +39,13 @@ header {
 
   .logo {
     width: 19%;
-    height: 1.5em;
-    padding-left: 10px;
+    height: 4vh;
+    padding-left: 0.625rem;
   }
 }
 
 .back, .sing {
-  padding-top: 4px;
+  padding-top: 0.25rem;
   img, p {
     display: $display-inline
   }
@@ -62,9 +64,9 @@ header {
 }
 
 article {
-  margin-top: 45px;
+  margin-top: 2.9rem;
   text-align: center;
-  line-height: 45px;
+  line-height: 2.9rem;
 
   h1 {
     font-family: "Roboto Medium", sans-serif;
@@ -100,7 +102,7 @@ article {
 
     /*------------top pictures---------------*/
     .img {
-      height: 159px;
+      height: 24vh;
     }
     .img1 {
       background: url("../img/img-card1.png");
@@ -118,26 +120,22 @@ article {
       font-size: 21px;
     }
     .size {
-      font-size: 20px;
+      font-size: 1.3rem;
     }
     p {
-      font-size: 13px;
+      font-size: 0.8rem;
     }
 
     .button {
       outline: 0;
-      margin-top: 20px;
-      border-radius: 40px;
-      width: 130px;
-      height: 38px;
+      margin-top: 1.25rem;
+      border-radius: 2em;
+      width: 8.125rem;
+      height: 2.5rem;
       border: 1px solid #fff;
       span {
         color: white;
       }
-    }
-
-    .button:hover {
-      cursor: pointer;
     }
 
     .button1 {
@@ -172,7 +170,7 @@ article {
   }
 
   .color1, .color2, .color3 {
-    margin: 21px 0 8px;
+    margin: 1.1rem 0 0.5rem;
   }
 
   .prise {
@@ -184,21 +182,21 @@ article {
 
     ul {
       font-family: "Roboto Regular", sans-serif;
-      font-size: 12px;
+      font-size: 0.75rem;
       border-top: 1px dashed #e5e5e5;
-      margin: 23px auto 0;
-      padding-top: 15px;
-      line-height: 32px;
+      margin: 1.4rem auto 0;
+      padding-top: 0.95rem;
+      line-height: 2rem;
       width: 85%;
-      letter-spacing: 0.4px;
+      letter-spacing: 0.025rem;
     }
 
     .checkbox {
       width: 85%;
-      margin: 7px auto 3px;
+      margin: 0.4rem auto 0.3rem;
       display: flex;
       flex-direction: column;
-      line-height: 30px;
+      line-height: 1.9rem;
 
       label {
         font-family: "Roboto Regular", sans-serif;
@@ -220,8 +218,8 @@ article {
   .bottom-color1 {
     p {
       width: 16%;
-      margin: 3px auto 23px;
-      letter-spacing: 1px;
+      margin: 0 auto 1.3rem;
+      letter-spacing: 0.1rem;
       color: $color1;
     }
     li::before {
@@ -262,15 +260,25 @@ article {
   }
 }
 
+.button:hover {
+  cursor: pointer;
+}
+
+.button:active {
+  background-image: linear-gradient(#000 10px, #000 10px);
+  color: #fff;
+}
+
+
 .offers {
-  margin: 47px auto 60px;
+  margin: 2.8rem auto 3.75rem;
   width: 69%;
   text-align: center;
 
   .offers-flex {
     display: flex;
     justify-content: space-between;
-    margin-top: 28px;
+    margin-top: 1.9rem;
 
     .border {
       border-right: 1px solid #e5e5e5;
@@ -279,17 +287,18 @@ article {
 
   p {
     font-family: "Roboto Regular", sans-serif;
-    font-size: 14px;
-    margin-bottom: 20px;
+    font-size: 0.9em;
+    margin-bottom: 1.1rem;
+
   }
 
   .offers-card {
     .offers-card-button {
       outline: 0;
-      margin-top: 10px;
-      border-radius: 40px;
-      width: 130px;
-      height: 38px;
+      margin-top: 0.6rem;
+      border-radius: 3em;
+      width: 8.1rem;
+      height: 6vh;
       border: 1px solid #fff;
       background-color: $color2;
 
@@ -298,13 +307,9 @@ article {
       }
     }
 
-    .offers-card-button:hover {
-      cursor: pointer;
-    }
-
     .offers-card-title {
       font-family: "Roboto Regular", sans-serif;
-      font-size: 21px;
+      font-size: 1.3rem;
       color: $color2;
     }
   }
@@ -314,15 +319,15 @@ article {
   text-align: center;
   border-top: 1px solid #e5e5e5;
   width: 100%;
-  padding-top: 27px;
+  padding-top: 1.7rem;
   font-family: "Roboto Regular", sans-serif;
 
   .benefits-title {
-    font-size: 32px;
+    font-size: 2.1rem;
   }
 
   .benefits-flex {
-    margin: 42px auto 38px;
+    margin: 2.6rem auto 2.3rem;
     width: 74%;
     display: flex;
     justify-content: space-between;
@@ -331,25 +336,26 @@ article {
       width: 20%;
 
       img {
-        width: 17px;
-        margin-bottom: 17px;
+        width: 1rem;
+        margin-bottom: 1rem;
       }
 
       p {
-        font-size: 13px;
+        font-size: 0.8rem;
       }
 
       .text-bold {
         font-weight: bold;
-        margin-bottom: 23px;
+        margin-bottom: 1.7rem;
       }
     }
   }
 }
 
 .slider {
-  width: 100%;
-  height: 500px;
+  width: 95%;
+  margin: auto;
+  height: 60vh;
   overflow: hidden;
   z-index: 6;
 
@@ -376,26 +382,29 @@ article {
     color: #fff;
     font-family: "MyriadPro-Regular", sans-serif;
     h1 {
-      font-weight: 100;
+      font-weight: 300;
       height: 100%;
+      font-size: 2.5rem;
       position: relative;
-      left: 37%;
-      bottom: 233px;
+      left: 29%;
+      bottom: 12rem;
     }
     p {
       text-align: center;
-      margin: 240px;
+      margin: 12rem;
     }
   }
   .slick-dots {
-    bottom: 80px
+    bottom: 3rem;
   }
   .slick-next {
-    right: 40px;
+    right: 3rem;
+    top: 46%;
     z-index: 6;
   }
   .slick-prev {
-    left: 20px;
+    top: 46%;
+    left: 2rem;
     z-index: 6;
   }
   .slick-next:before {
@@ -416,7 +425,7 @@ article {
     color: #ffffff;
   }
   .slick-track {
-    top: -20px;
+    top: -3rem;
   }
 }
 
@@ -424,19 +433,19 @@ article {
   text-align: center;
   font-family: "Roboto Regular", sans-serif;
   h3 {
-    margin: 44px 0 18px;
-    font-size: 22px;
+    margin: 2.7rem 0 1.2rem;
+    font-size: 1.4rem;
   }
   p {
-    font-size: 12px;
-    margin-bottom: 8px;
+    font-size: 0.75em;
+    margin-bottom: 0.5em;
   }
   .text-button {
-    width: 94px;
-    height: 32px;
-    margin-top: 20px;
+    width: 6rem;
+    height: 2rem;
+    margin-top: 1.56rem;
     border: 1px solid #000;
-    border-radius: 30px;
+    border-radius: 1.87rem;
     outline: 0;
     background-color: #fff;
   }
@@ -444,22 +453,20 @@ article {
 
 footer {
   font-family: "Roboto Regular", sans-serif;
-  margin: 48px 0 20px;
+  margin: 3rem 0 1.25rem;
   border-top: 1px solid #e5e5e5;
   .footer-flex {
-    display: inline-flex;
-    position: relative;
-    font-size: 12px;
-    padding-top: 22px;
-    left: 35%;
+    display: flex;
+    font-size: 0.75rem;
+    margin: 1.2rem auto;
     justify-content: space-between;
-    width: 23.3125%;
+    width: 31%;
   }
 
   span {
-    position: relative;
-    font-size: 12px;
-    left: 5%;
+    margin: 1.4rem 0 0 4rem;
+    font-size: 0.75rem;
+    float: left;
   }
 }
 
