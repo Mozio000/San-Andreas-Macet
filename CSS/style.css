@@ -1,0 +1,404 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Roboto Medium";
+  src: url("../Fonts/3964.ttf");
+}
+@font-face {
+  font-family: "Roboto Regular";
+  src: url("../Fonts/3966.ttf");
+}
+@font-face {
+  font-family: "MyriadPro-Regular";
+  src: url("../Fonts/MyriadPro-Regular.ttf");
+}
+li {
+  list-style: none;
+}
+
+header {
+  margin: 17px auto 8px;
+  padding: 0 32px 15px;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  border-bottom: 1px solid #e5e5e5;
+}
+header .logo {
+  width: 19%;
+  height: 1.5em;
+  padding-left: 10px;
+}
+
+.back, .sing {
+  padding-top: 4px;
+}
+.back img, .back p, .sing img, .sing p {
+  display: inline-block;
+}
+.back img, .sing img {
+  height: 12px;
+}
+.back p, .sing p {
+  font-family: "Roboto Medium", sans-serif;
+  color: black;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+.back a, .sing a {
+  text-decoration: none;
+}
+
+article {
+  margin-top: 45px;
+  text-align: center;
+  line-height: 45px;
+}
+article h1 {
+  font-family: "Roboto Medium", sans-serif;
+  font-weight: initial;
+  font-size: 1.5em;
+  line-height: 1;
+}
+article p {
+  font-family: "Roboto Regular", sans-serif;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  width: 76%;
+  margin: 30px auto 0;
+}
+.cards .card-background {
+  background-color: #f8f8f8;
+  border: 1px solid #e5e5e5;
+  padding: 0 -1px;
+}
+.cards .card-shadow {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+}
+.cards .card {
+  width: 31%;
+  text-align: center;
+  font-family: "Roboto Regular", sans-serif;
+  /*------------top pictures---------------*/
+  /*---------------------------------------------*/
+  /*--------color title cards--------*/
+  /*---------------------------------------*/
+}
+.cards .card .img {
+  height: 159px;
+}
+.cards .card .img1 {
+  background: url("../img/img-card1.png");
+}
+.cards .card .img2 {
+  background: url("../img/img-card2.png");
+}
+.cards .card .img3 {
+  background: url("../img/img-card3.png");
+}
+.cards .card h5 {
+  font-weight: 500;
+  font-size: 21px;
+}
+.cards .card .size {
+  font-size: 20px;
+}
+.cards .card p {
+  font-size: 13px;
+}
+.cards .card .button {
+  outline: 0;
+  margin-top: 20px;
+  border-radius: 40px;
+  width: 130px;
+  height: 38px;
+  border: 1px solid #fff;
+}
+.cards .card .button span {
+  color: white;
+}
+.cards .card .button:hover {
+  cursor: pointer;
+}
+.cards .card .button1 {
+  background-color: #2b87dc;
+}
+.cards .card .button2 {
+  background-color: #fff;
+  border: 1px solid #1ab0b9;
+}
+.cards .card .button2 span {
+  color: #1ab0b9;
+}
+.cards .card .button3 {
+  background-color: #3a55af;
+}
+.cards .card .color1 {
+  color: #2b87dc;
+}
+.cards .card .color2 {
+  color: #1ab0b9;
+}
+.cards .card .color3 {
+  color: #3a55af;
+}
+.cards .color1, .cards .color2, .cards .color3 {
+  margin: 21px 0 8px;
+}
+.cards .prise {
+  font-size: 13px;
+}
+.cards .card-bottom {
+  text-align: left;
+}
+.cards .card-bottom ul {
+  font-family: "Roboto Regular", sans-serif;
+  font-size: 12px;
+  border-top: 1px dashed #e5e5e5;
+  margin: 23px auto 0;
+  padding-top: 15px;
+  line-height: 32px;
+  width: 85%;
+  letter-spacing: 0.4px;
+}
+.cards .card-bottom .checkbox {
+  width: 85%;
+  margin: 7px auto 3px;
+  display: flex;
+  flex-direction: column;
+  line-height: 30px;
+}
+.cards .card-bottom .checkbox label {
+  font-family: "Roboto Regular", sans-serif;
+  font-size: 12px;
+}
+.cards .card-bottom .checkbox label input {
+  margin-right: 10px;
+}
+.cards .card-bottom p {
+  font-family: "Roboto Medium", sans-serif;
+  font-size: 12px;
+  width: 14%;
+  margin: 3px auto 23px;
+}
+.cards .bottom-color1 p {
+  width: 16%;
+  margin: 3px auto 23px;
+  letter-spacing: 1px;
+  color: #2b87dc;
+}
+.cards .bottom-color1 li::before {
+  content: url("../img/ChekColor1.png");
+  padding-right: 3px;
+}
+.cards .bottom-color2 p {
+  width: 16%;
+  margin: 67px auto 23px;
+  letter-spacing: 1px;
+  color: #1ab0b9;
+}
+.cards .bottom-color2 li::before {
+  content: url("../img/ChekColor2.png");
+  padding-right: 3px;
+}
+.cards .bottom-color3 p {
+  width: 16%;
+  margin: 36px auto 23px;
+  letter-spacing: 1px;
+  color: #3a55af;
+}
+.cards .bottom-color3 ul li::before {
+  content: url("../img/ChekColor3.png");
+  padding-right: 3px;
+}
+
+.offers {
+  margin: 47px auto 60px;
+  width: 69%;
+  text-align: center;
+}
+.offers .offers-flex {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 28px;
+}
+.offers .offers-flex .border {
+  border-right: 1px solid #e5e5e5;
+}
+.offers p {
+  font-family: "Roboto Regular", sans-serif;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.offers .offers-card .offers-card-button {
+  outline: 0;
+  margin-top: 10px;
+  border-radius: 40px;
+  width: 130px;
+  height: 38px;
+  border: 1px solid #fff;
+  background-color: #1ab0b9;
+}
+.offers .offers-card .offers-card-button span {
+  color: #fff;
+}
+.offers .offers-card .offers-card-button:hover {
+  cursor: pointer;
+}
+.offers .offers-card .offers-card-title {
+  font-family: "Roboto Regular", sans-serif;
+  font-size: 21px;
+  color: #1ab0b9;
+}
+
+.benefits {
+  text-align: center;
+  border-top: 1px solid #e5e5e5;
+  width: 100%;
+  padding-top: 27px;
+  font-family: "Roboto Regular", sans-serif;
+}
+.benefits .benefits-title {
+  font-size: 32px;
+}
+.benefits .benefits-flex {
+  margin: 42px auto 38px;
+  width: 74%;
+  display: flex;
+  justify-content: space-between;
+}
+.benefits .benefits-flex .benefits-card {
+  width: 20%;
+}
+.benefits .benefits-flex .benefits-card img {
+  width: 17px;
+  margin-bottom: 17px;
+}
+.benefits .benefits-flex .benefits-card p {
+  font-size: 13px;
+}
+.benefits .benefits-flex .benefits-card .text-bold {
+  font-weight: bold;
+  margin-bottom: 23px;
+}
+
+.slider {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  z-index: 6;
+  /*-----------slides img--------*/
+  /*----------------------------------*/
+}
+.slider .slider-item1 {
+  background: url("../img/Slider.jpg") no-repeat;
+  background-size: cover;
+}
+.slider .slider-item2 {
+  background: url("../img/Slider1.jpg") no-repeat;
+  background-size: cover;
+}
+.slider .slider-item3 {
+  background: url("../img/Slider2.jpg") no-repeat;
+  background-size: cover;
+}
+.slider .slider-item4 {
+  background: url("../img/Slider1.jpg") no-repeat;
+  background-size: cover;
+}
+.slider .slider-item {
+  color: #fff;
+  font-family: "MyriadPro-Regular", sans-serif;
+}
+.slider .slider-item h1 {
+  font-weight: 100;
+  height: 100%;
+  position: relative;
+  left: 37%;
+  bottom: 233px;
+}
+.slider .slider-item p {
+  text-align: center;
+  margin: 240px;
+}
+.slider .slick-dots {
+  bottom: 80px;
+}
+.slider .slick-next {
+  right: 40px;
+  z-index: 6;
+}
+.slider .slick-prev {
+  left: 20px;
+  z-index: 6;
+}
+.slider .slick-next:before {
+  content: " ";
+  background: url(../img/rignt-next.png) no-repeat;
+  width: 20px;
+  height: 40px;
+  position: absolute;
+}
+.slider .slick-prev:before {
+  content: " ";
+  background: url(../img/left-next.png) no-repeat;
+  width: 20px;
+  height: 40px;
+  position: absolute;
+}
+.slider .slick-dots li.slick-active button:before {
+  color: #ffffff;
+}
+.slider .slick-track {
+  top: -20px;
+}
+
+.text {
+  text-align: center;
+  font-family: "Roboto Regular", sans-serif;
+}
+.text h3 {
+  margin: 44px 0 18px;
+  font-size: 22px;
+}
+.text p {
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+.text .text-button {
+  width: 94px;
+  height: 32px;
+  margin-top: 20px;
+  border: 1px solid #000;
+  border-radius: 30px;
+  outline: 0;
+  background-color: #fff;
+}
+
+footer {
+  font-family: "Roboto Regular", sans-serif;
+  margin: 48px 0 20px;
+  border-top: 1px solid #e5e5e5;
+}
+footer .footer-flex {
+  display: inline-flex;
+  position: relative;
+  font-size: 12px;
+  padding-top: 22px;
+  left: 35%;
+  justify-content: space-between;
+  width: 23.3125%;
+}
+footer span {
+  position: relative;
+  font-size: 12px;
+  left: 5%;
+}
+
+/*# sourceMappingURL=style.css.map */

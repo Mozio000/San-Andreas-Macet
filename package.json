@@ -1,0 +1,10 @@
+{
+  "name": "",
+  "version": "",
+  "devDependencies": {
+    "sass": "^1.14.3"
+  },
+  "dependencies": {
+    "bootstrap": "^4.1.3"
+  }
+}

@@ -1,0 +1,468 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Roboto Medium";
+  src: url("../Fonts/3964.ttf");
+}
+
+@font-face {
+  font-family: "Roboto Regular";
+  src: url("../Fonts/3966.ttf");
+}
+
+@font-face {
+  font-family: "MyriadPro-Regular";
+  src: url("../Fonts/MyriadPro-Regular.ttf");
+}
+
+$display-inline: inline-block;
+$color1: #2b87dc;
+$color2: #1ab0b9;
+$color3: #3a55af;
+
+li {
+  list-style: none;
+}
+
+header {
+  margin: 17px auto 8px;
+  padding: 0 32px 15px;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  border-bottom: 1px solid #e5e5e5;
+
+  .logo {
+    width: 19%;
+    height: 1.5em;
+    padding-left: 10px;
+  }
+}
+
+.back, .sing {
+  padding-top: 4px;
+  img, p {
+    display: $display-inline
+  }
+  img {
+    height: 12px;
+  }
+  p {
+    font-family: "Roboto Medium", sans-serif;
+    color: black;
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+  a {
+    text-decoration: none;
+  }
+}
+
+article {
+  margin-top: 45px;
+  text-align: center;
+  line-height: 45px;
+
+  h1 {
+    font-family: "Roboto Medium", sans-serif;
+    font-weight: initial;
+    font-size: 1.5em;
+    line-height: 1;
+  }
+  p {
+    font-family: "Roboto Regular", sans-serif;
+  }
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  width: 76%;
+  margin: 30px auto 0;
+
+  .card-background {
+    background-color: #f8f8f8;
+    border: 1px solid #e5e5e5;
+    padding: 0 -1px;
+  }
+
+  .card-shadow {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .25);
+  }
+
+  .card {
+    width: 31%;
+    text-align: center;
+    font-family: "Roboto Regular", sans-serif;
+
+    /*------------top pictures---------------*/
+    .img {
+      height: 159px;
+    }
+    .img1 {
+      background: url("../img/img-card1.png");
+    }
+    .img2 {
+      background: url("../img/img-card2.png");
+    }
+    .img3 {
+      background: url("../img/img-card3.png");
+    }
+    /*---------------------------------------------*/
+
+    h5 {
+      font-weight: 500;
+      font-size: 21px;
+    }
+    .size {
+      font-size: 20px;
+    }
+    p {
+      font-size: 13px;
+    }
+
+    .button {
+      outline: 0;
+      margin-top: 20px;
+      border-radius: 40px;
+      width: 130px;
+      height: 38px;
+      border: 1px solid #fff;
+      span {
+        color: white;
+      }
+    }
+
+    .button:hover {
+      cursor: pointer;
+    }
+
+    .button1 {
+      background-color: $color1;
+    }
+
+    .button2 {
+      background-color: #fff;
+      border: 1px solid $color2;
+      span {
+        color: $color2;
+      }
+    }
+
+    .button3 {
+      background-color: $color3;
+    }
+
+    /*--------color title cards--------*/
+    .color1 {
+      color: $color1;
+    }
+
+    .color2 {
+      color: $color2;
+    }
+
+    .color3 {
+      color: $color3;
+    }
+    /*---------------------------------------*/
+  }
+
+  .color1, .color2, .color3 {
+    margin: 21px 0 8px;
+  }
+
+  .prise {
+    font-size: 13px;
+  }
+
+  .card-bottom {
+    text-align: left;
+
+    ul {
+      font-family: "Roboto Regular", sans-serif;
+      font-size: 12px;
+      border-top: 1px dashed #e5e5e5;
+      margin: 23px auto 0;
+      padding-top: 15px;
+      line-height: 32px;
+      width: 85%;
+      letter-spacing: 0.4px;
+    }
+
+    .checkbox {
+      width: 85%;
+      margin: 7px auto 3px;
+      display: flex;
+      flex-direction: column;
+      line-height: 30px;
+
+      label {
+        font-family: "Roboto Regular", sans-serif;
+        font-size: 12px;
+
+        input {
+          margin-right: 10px;
+        }
+      }
+    }
+    p {
+      font-family: "Roboto Medium", sans-serif;
+      font-size: 12px;
+      width: 14%;
+      margin: 3px auto 23px;
+    }
+  }
+
+  .bottom-color1 {
+    p {
+      width: 16%;
+      margin: 3px auto 23px;
+      letter-spacing: 1px;
+      color: $color1;
+    }
+    li::before {
+      content: url("../img/ChekColor1.png");
+      padding-right: 3px;
+    }
+  }
+
+  .bottom-color2 {
+    p {
+      width: 16%;
+      margin: 67px auto 23px;
+      letter-spacing: 1px;
+      color: $color2;
+    }
+
+    li::before {
+      content: url("../img/ChekColor2.png");
+      padding-right: 3px;
+    }
+  }
+
+  .bottom-color3 {
+    p {
+      width: 16%;
+      margin: 36px auto 23px;
+      letter-spacing: 1px;
+      color: $color3;
+    }
+
+    ul {
+      li::before {
+        content: url("../img/ChekColor3.png");
+        padding-right: 3px;
+      }
+    }
+
+  }
+}
+
+.offers {
+  margin: 47px auto 60px;
+  width: 69%;
+  text-align: center;
+
+  .offers-flex {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 28px;
+
+    .border {
+      border-right: 1px solid #e5e5e5;
+    }
+  }
+
+  p {
+    font-family: "Roboto Regular", sans-serif;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .offers-card {
+    .offers-card-button {
+      outline: 0;
+      margin-top: 10px;
+      border-radius: 40px;
+      width: 130px;
+      height: 38px;
+      border: 1px solid #fff;
+      background-color: $color2;
+
+      span {
+        color: #fff;
+      }
+    }
+
+    .offers-card-button:hover {
+      cursor: pointer;
+    }
+
+    .offers-card-title {
+      font-family: "Roboto Regular", sans-serif;
+      font-size: 21px;
+      color: $color2;
+    }
+  }
+}
+
+.benefits {
+  text-align: center;
+  border-top: 1px solid #e5e5e5;
+  width: 100%;
+  padding-top: 27px;
+  font-family: "Roboto Regular", sans-serif;
+
+  .benefits-title {
+    font-size: 32px;
+  }
+
+  .benefits-flex {
+    margin: 42px auto 38px;
+    width: 74%;
+    display: flex;
+    justify-content: space-between;
+
+    .benefits-card {
+      width: 20%;
+
+      img {
+        width: 17px;
+        margin-bottom: 17px;
+      }
+
+      p {
+        font-size: 13px;
+      }
+
+      .text-bold {
+        font-weight: bold;
+        margin-bottom: 23px;
+      }
+    }
+  }
+}
+
+.slider {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  z-index: 6;
+
+  /*-----------slides img--------*/
+  .slider-item1 {
+    background: url("../img/Slider.jpg") no-repeat;
+    background-size: cover;
+  }
+  .slider-item2 {
+    background: url("../img/Slider1.jpg") no-repeat;
+    background-size: cover;
+  }
+  .slider-item3 {
+    background: url("../img/Slider2.jpg") no-repeat;
+    background-size: cover;
+  }
+  .slider-item4 {
+    background: url("../img/Slider1.jpg") no-repeat;
+    background-size: cover;
+  }
+  /*----------------------------------*/
+  .slider-item {
+
+    color: #fff;
+    font-family: "MyriadPro-Regular", sans-serif;
+    h1 {
+      font-weight: 100;
+      height: 100%;
+      position: relative;
+      left: 37%;
+      bottom: 233px;
+    }
+    p {
+      text-align: center;
+      margin: 240px;
+    }
+  }
+  .slick-dots {
+    bottom: 80px
+  }
+  .slick-next {
+    right: 40px;
+    z-index: 6;
+  }
+  .slick-prev {
+    left: 20px;
+    z-index: 6;
+  }
+  .slick-next:before {
+    content: " ";
+    background: url(../img/rignt-next.png) no-repeat;
+    width: 20px;
+    height: 40px;
+    position: absolute;
+  }
+  .slick-prev:before {
+    content: " ";
+    background: url(../img/left-next.png) no-repeat;
+    width: 20px;
+    height: 40px;
+    position: absolute;
+  }
+  .slick-dots li.slick-active button:before {
+    color: #ffffff;
+  }
+  .slick-track {
+    top: -20px;
+  }
+}
+
+.text {
+  text-align: center;
+  font-family: "Roboto Regular", sans-serif;
+  h3 {
+    margin: 44px 0 18px;
+    font-size: 22px;
+  }
+  p {
+    font-size: 12px;
+    margin-bottom: 8px;
+  }
+  .text-button {
+    width: 94px;
+    height: 32px;
+    margin-top: 20px;
+    border: 1px solid #000;
+    border-radius: 30px;
+    outline: 0;
+    background-color: #fff;
+  }
+}
+
+footer {
+  font-family: "Roboto Regular", sans-serif;
+  margin: 48px 0 20px;
+  border-top: 1px solid #e5e5e5;
+  .footer-flex {
+    display: inline-flex;
+    position: relative;
+    font-size: 12px;
+    padding-top: 22px;
+    left: 35%;
+    justify-content: space-between;
+    width: 23.3125%;
+  }
+
+  span {
+    position: relative;
+    font-size: 12px;
+    left: 5%;
+  }
+}
+
+
+
+
