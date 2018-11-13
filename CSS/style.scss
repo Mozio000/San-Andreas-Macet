@@ -22,6 +22,7 @@ $display-inline: inline-block;
 $color1: #2b87dc;
 $color2: #1ab0b9;
 $color3: #3a55af;
+$color-white: #fff;
 
 li {
   list-style: none;
@@ -132,7 +133,7 @@ article {
       height: 38px;
       border: 1px solid #fff;
       span {
-        color: white;
+        color: #fff;
       }
     }
 
@@ -260,6 +261,11 @@ article {
     }
 
   }
+}
+
+.effect:active {
+  background-image: linear-gradient(#000 10px, #000 10px);
+  color: $color-white;
 }
 
 .offers {
